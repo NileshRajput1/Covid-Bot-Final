@@ -1,0 +1,12 @@
+Make sure your PC has Python installed and Pycharm along with GIt and Anaconda.
+
+open Pycharm -> Open Covid Bot Final Project -> Open two terminals 
+
+then in # 1st terminal type code (  rasa run -m models --enable-api --cors "*" --debug ) then hit enter 
+
+                  And wait until you get something like this   ( INFO     root  - Rasa server is up and running. )
+
+               # In 2nd terminal type code ( rasa run actions ) and Hit enter  
+
+  Then move to your local directory where you have saved your file Covid Bot Final -> and run file index2.html
+ 
