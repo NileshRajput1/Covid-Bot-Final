@@ -1,0 +1,48 @@
+/* start faq_area css
+  ============================================================================================ */
+.about_faq_area {
+  padding-top: 115px;
+}
+.faq_inner {
+  .accordion {
+    .card {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .card-header {
+        border: 0px;
+        margin-bottom: 0;
+        button {
+          font-size: 16px;
+          line-height: 27px;
+          padding: 16px 20px;
+        }
+      }
+      .card-body {
+        padding-left: 20px;
+        padding-bottom: 26px;
+        .faq_content {
+          border-top: 1px solid #747099;
+          padding-top: 15px;
+          padding-right: 75px;
+          .text_btn {
+            margin-top: 20px;
+            display: inline-block;
+          }
+        }
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.faq_area {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+/* End faq_area css
+============================================================================================ */

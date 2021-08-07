@@ -1,0 +1,96 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - city:
+      use_entities:
+        - city
+  - mood_unhappy
+  - hospital
+  - oxygen
+  - plasma
+  - remdesivir
+  - ambulance
+  - bot_challenge
+  - volunteer
+  - medicine
+  - nlu_out_of_scope
+
+entities:
+  - city
+actions:
+  - Get_Oxygen
+  - Get_Hospital
+  - Get_REMDESIVIR
+  - Get_Plasma
+  - Get_Ambulance
+slots:
+  city:
+    type: text
+responses:
+  utter_ask_need:
+    - text: "May I know how can I help you? Just say it in the format of X in Y. For example - Oxygen in Delhi"
+  utter_hospital:
+    - text: "Please select the option from below:"
+      buttons:
+      - title: "Beds"
+        payload: "/beds"
+      - title: "Ventilator/ICU"
+        payload: "/icu"
+  utter_restart:
+    - text: "If you want to restart the conversation or change resource click below:"
+      buttons:
+        - title: "Restart Conversation"
+          payload: "/greet"
+        - title: "Change Resource"
+          payload: "/city"
+
+
+  utter_out_of_scope:
+    - text: "I don't have required data at this time."
+
+
+  utter_option:
+    - text: "Please select the option from below:"
+      buttons:
+        - title: "Hospital"
+          payload: "/hospital"
+        - title: "Oxygen"
+          payload: "/oxygen"
+        - title: "Plasma"
+          payload: "/plasma"
+        - title: "Ambulance"
+          payload: "/ambulance"
+        - title: "Remdesivir"
+          payload: "/remdesivir"
+        - title: "Become a Volunteer"
+          payload: "/volunteer"
+  utter_greet:
+  - text: "Hi! Welcome To Covid Helpline. Please let me know in which city do you live?"
+
+  utter_city:
+    - text: "Please let me know in which city do you live in?"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  utter_volenteer:
+    - text: "Great! Request you to kindly[click here](https://forms.gle/T4XwA45tpJQ9mkGX6) and fill the form"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

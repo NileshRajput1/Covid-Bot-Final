@@ -1,0 +1,66 @@
+/* Search Popup Area css
+============================================================================================ */
+.search_modal {
+  background: rgba(0, 0, 0, 0.9);
+  .close {
+    opacity: 1;
+    margin-top: 30px;
+    margin-right: 76px;
+    img {
+      @include transition;
+    }
+    &:hover {
+      opacity: 1 !important;
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .modal-dialog {
+    max-width: 585px;
+    margin-top: 200px;
+    .modal-content {
+      background-color: transparent;
+      border: none;
+      .modal-body {
+        padding: 0px;
+        .input-group {
+          display: block;
+          input {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            border-radius: 0px;
+            outline: none;
+            box-shadow: none;
+            padding: 0px 10px;
+            height: 52px;
+            width: 100%;
+            font: 500 24px/52px $sand;
+            color: #fff;
+            @include placeholder {
+              font: 500 24px/52px $sand;
+              color: #fff;
+            }
+          }
+          button {
+            border: none;
+            padding: 0px;
+            position: absolute;
+            right: 12px;
+            top: 10px;
+            font-size: 24px;
+            color: #fff;
+            z-index: 5;
+            background: transparent !important;
+            border-radius: 0px;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Search Popup Area css
+============================================================================================ */

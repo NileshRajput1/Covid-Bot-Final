@@ -1,0 +1,253 @@
+/* Subscribe Area css
+============================================================================================ */
+.subscribe_area {
+  background: url(../images/subscribe-bg.jpg) no-repeat scroll center center;
+  background-size: cover;
+  padding: 100px 0px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  .media {
+    .d-flex {
+      padding-right: 25px;
+      i {
+        font-size: 70px;
+        color: #fff;
+      }
+    }
+    .media-body {
+      h4 {
+        font: 700 36px $sand;
+        color: #fff;
+      }
+      p {
+        color: #fff;
+        font: 400 16px/30px $sand;
+        margin-right: -80px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .nav {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    li {
+      position: absolute;
+      &:nth-child(1) {
+        left: 50%;
+        bottom: -70px;
+        margin-left: -130px;
+      }
+      &:nth-child(2) {
+        right: 28%;
+        top: 25px;
+        animation: rotate 3s linear 1s infinite;
+      }
+      &:nth-child(3) {
+        right: 28px;
+        bottom: 22px;
+        animation: rotate 4.5s linear 1s infinite;
+      }
+    }
+  }
+}
+.mail_box {
+  padding-left: 200px;
+  .input-group {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    input {
+      font-family: $sand, Linearicons;
+      border: none;
+      background: transparent;
+      width: 100%;
+      border-bottom: 2px solid #fff;
+      border-radius: 0px;
+      padding-left: 0px;
+      height: 58px;
+      line-height: 58px;
+      padding-right: 38px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 18px;
+      outline: none;
+      box-shadow: none;
+      @include placeholder {
+        font-family: $sand, Linearicons;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    .btn {
+      position: absolute;
+      right: 0px;
+      top: 2px;
+      border: none;
+      color: #fff;
+      padding: 0px;
+      border-radius: 0px;
+      background: transparent;
+      font-size: 36px;
+    }
+  }
+}
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #b5f5ef;
+  font: 500 14px $sand;
+  span {
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.container-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #ccd3e4;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border: solid $baseColor;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* End Subscribe Area css
+============================================================================================ */
+
+/* Contact Form Area css
+============================================================================================ */
+.contact_area {
+  padding: 60px 0px 140px;
+}
+.contact_details {
+  .contact_details_item {
+    margin-bottom: 30px;
+    i {
+      color: $baseColor;
+      font-size: 36px;
+      margin-bottom: 17px;
+      display: inline-block;
+    }
+    h4 {
+      font: 700 24px/34px $sand;
+      margin-bottom: 15px;
+    }
+    p {
+      font: 400 16px/30px $sand;
+      margin-bottom: 0px;
+    }
+    h6 {
+      font: 400 16px/30px $sand;
+      margin-bottom: 0px;
+      color: $pfont;
+      transition: color 0.2s linear;
+      &:hover {
+        color: $baseColor;
+      }
+    }
+  }
+}
+.contact_form_inner {
+  padding-top: 50px;
+}
+.contact_us_form.appoinment_form {
+  padding: 0px;
+  .form-group {
+    margin-bottom: 45px;
+    margin-top: 25px;
+    textarea {
+      &.form-control {
+        height: 225px;
+      }
+    }
+    &.checkbox_field {
+      margin-top: 0;
+      .green_btn {
+        padding: 0px 23px;
+      }
+    }
+  }
+  label {
+    font-weight: 600;
+  }
+}
+.map_area {
+  position: relative;
+  &:before {
+    content: "";
+    background: url(../images/map-tp.png) no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: 30;
+  }
+  #mapBox {
+    min-height: 800px;
+  }
+}
+.success-message,
+.error-message {
+  display: none;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+/* End Contact Form Area css
+============================================================================================ */

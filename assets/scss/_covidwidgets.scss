@@ -1,0 +1,244 @@
+/* Covid Widgets Area css
+============================================================================================ */
+.world_wide_tracker.tracker_page {
+  padding-top: 80px;
+  padding-bottom: 0px;
+  .tracker_text {
+    padding-top: 0px;
+  }
+  .container {
+    padding-bottom: 65px;
+  }
+}
+.confirm_boxes {
+  margin-top: 55px;
+  .col-lg-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .confirm_item {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px 0px rgba(51, 48, 78, 0.15);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    i {
+      font-size: 36px;
+    }
+    h3 {
+      font: 700 24px $sand;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    p {
+      font: 500 14px $sand;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.total_cases_chart {
+  padding-top: 60px;
+  .total_cases_inner {
+    padding-left: 15px;
+    iframe {
+      width: 100%;
+      height: 480px;
+    }
+  }
+}
+.coronavirus_map {
+  iframe {
+    width: 100%;
+    height: 765px;
+    border: none;
+    margin-bottom: -8px;
+    pointer-events: none;
+    &.clicked {
+      pointer-events: auto;
+    }
+  }
+}
+/* End Covid Widgets Area css
+============================================================================================ */
+
+/* DataTable Area css
+============================================================================================ */
+.data_table_area {
+  padding-top: 30px;
+  padding-bottom: 120px;
+  .dataTables_wrapper {
+    .dataTables_length {
+      float: right;
+      margin-top: 14px;
+      label {
+        font: 600 16px $sand;
+        color: $pfont;
+        margin-bottom: 0px;
+        select {
+          border: none;
+          padding: 0px 20px;
+          width: 80px;
+          height: 30px;
+          margin-left: 5px;
+          margin-right: 5px;
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+    .dataTables_filter {
+      display: inline-block;
+      margin-bottom: 25px;
+      label {
+        margin-bottom: 0px;
+        position: relative;
+        &:before {
+          content: "\ec7c";
+          font-family: "Linearicons" !important;
+          position: absolute;
+          right: 0px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $pfont;
+        }
+        input {
+          border: none;
+          border-bottom: 2px solid #58547e;
+          box-shadow: none;
+          width: 250px;
+          padding: 0px 20px 0px 10px;
+          font: 600 16px $sand;
+          height: 40px;
+          line-height: 40px;
+          outline: none;
+          box-shadow: none;
+          @include placeholder {
+            font: 600 16px $sand;
+            color: $pfont;
+          }
+        }
+      }
+    }
+    .table {
+      width: 100% !important;
+      th {
+        padding: 0px;
+      }
+      thead {
+        tr {
+          background: #32323a;
+          th {
+            padding-left: 18px;
+            padding-right: 18px;
+
+            color: #fff;
+            height: 53px;
+            font: 700 14px $sand;
+            border: 1px solid #d6d9e2;
+            border-right: 1px solid #5b5b69;
+            vertical-align: middle;
+            position: relative;
+            outline: none;
+            box-shadow: none;
+            cursor: pointer;
+            &:first-child {
+              width: 50px !important;
+            }
+            &:before {
+              content: "\ec42";
+              font-family: "Linearicons" !important;
+              position: absolute;
+              right: 5px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 14px;
+              color: #797983;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          background: transparent !important;
+          td {
+            text-align: right;
+            vertical-align: middle;
+            font: 500 14px $sand;
+            border: 1px solid #d6d9e2;
+            .text-primary {
+              color: $pfont !important;
+            }
+            .text-danger {
+              color: $pfont !important;
+            }
+            .text-success {
+              color: $pfont !important;
+            }
+            .text-warning {
+              color: $pfont !important;
+            }
+            &:nth-child(1) {
+              text-align: center;
+            }
+            &:nth-child(2) {
+              text-align: center;
+            }
+            &:nth-child(3) {
+              text-align: left;
+              font: 700 16px $sand;
+              span {
+                color: $baseColor;
+                text-decoration: underline;
+              }
+            }
+            &:nth-child(5) {
+              background: #ffde90;
+              font: 700 14px $sand;
+              .text-primary {
+                color: #000 !important;
+              }
+            }
+            &:nth-child(7) {
+              background: #01cfbd;
+              font: 700 14px $sand;
+              .text-danger {
+                color: #fff !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .dataTables_info {
+      display: inline-block;
+      font: 700 14px $sand;
+      color: $pfont;
+    }
+    .dataTables_paginate {
+      float: right;
+      overflow: hidden;
+      .paginate_button {
+        font: 700 14px $sand;
+        color: $pfont;
+        height: 30px;
+        width: 30px;
+        background: rgba(0, 0, 0, 0.02);
+        display: inline-block;
+        text-align: center;
+        line-height: 30px;
+        margin-left: 10px;
+        cursor: pointer;
+        &.previous,
+        &.next {
+          background: transparent;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+/* End DataTable Area css
+============================================================================================ */

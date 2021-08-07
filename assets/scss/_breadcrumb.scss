@@ -1,0 +1,492 @@
+/* Home Banner Area css
+============================================================================================ */
+.home_banner_area {
+  background: url(../images/home-banner-bg.jpg) no-repeat scroll center center;
+  background-size: cover;
+  padding-top: 115px;
+  padding-bottom: 26px;
+  .home_banner_inner {
+    h5 {
+      font: 700 27px $sand;
+      color: $baseColor;
+      margin-bottom: 13px;
+      margin-top: 35px;
+    }
+    h3 {
+      font: 700 60px/70px $sand;
+      letter-spacing: -1.5px;
+      margin-right: -67px;
+      margin-bottom: 20px;
+    }
+    p {
+      font: 400 21px/36px $sand;
+      margin-bottom: 25px;
+    }
+  }
+  img {
+    padding-left: 30px;
+  }
+}
+.home_option {
+  margin-top: 65px;
+  max-width: 600px;
+  margin-bottom: -45px;
+  .col-lg-6 {
+    margin-bottom: 45px;
+  }
+  .media {
+    .d-flex {
+      padding-right: 16px;
+      i {
+        font-size: 42px;
+        color: $baseColor;
+        margin-top: 3px;
+      }
+    }
+    .media-body {
+      h4 {
+        font: 700 21px $sand;
+      }
+      p {
+        font: 500 14px $sand;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+/* End Home Banner Area css
+============================================================================================ */
+
+/* Prevention Banner Area css
+============================================================================================ */
+.prevention_banner {
+  background: url(../images/breadcrumb/prevention-bg.jpg) no-repeat scroll
+    center center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 75px;
+  .prevention_text {
+    h6 {
+      color: $baseColor;
+      font: 700 18px $sand;
+    }
+    h3 {
+      font: 700 40px $sand;
+      color: #fff;
+    }
+    .nav {
+      margin-bottom: 70px;
+      li {
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0px;
+          a {
+            color: #d0cced;
+            font-weight: 400;
+            &:before {
+              display: none;
+            }
+          }
+        }
+        a {
+          color: #fff;
+          font: 600 14px $sand;
+          position: relative;
+          &:before {
+            content: "\ec3c";
+            position: absolute;
+            font-family: "Linearicons" !important;
+            right: -22px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            color: #d0cced;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Prevention Banner Area css
+============================================================================================ */
+
+/* Breadcrumb Area css
+============================================================================================ */
+.breadcrumb_area {
+  position: relative;
+  background: linear-gradient(
+      rgba(245, 245, 249, 0.55),
+      rgba(245, 245, 249, 0.55)
+    ),
+    url(../images/breadcrumb/breadcrumb.jpg);
+  background-size: cover;
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 45px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 2;
+  .breadcrumb_text {
+    // position: relative;
+    // z-index: 2;
+    h6 {
+      color: $baseColor;
+      font: 700 18px $sand;
+    }
+    h3 {
+      font: 700 40px $sand;
+    }
+    .nav {
+      margin-bottom: 0px;
+      li {
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0px;
+          a {
+            color: $pfont;
+            font-weight: 400;
+            &:before {
+              display: none;
+            }
+          }
+        }
+        a {
+          color: $pfont;
+          font: 600 14px $sand;
+          position: relative;
+          &:before {
+            content: "\ec3c";
+            position: absolute;
+            font-family: "Linearicons" !important;
+            right: -22px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 10px;
+            color: $pfont;
+          }
+        }
+      }
+    }
+  }
+  .doctors_bio {
+    margin-bottom: -45px;
+    margin-top: 45px;
+  }
+  &.boi_breadcrumb {
+    background: linear-gradient(
+        rgba(245, 245, 249, 0.55),
+        rgba(245, 245, 249, 0.55)
+      ),
+      url(../images/breadcrumb/breadcrumb-2.jpg);
+  }
+  &.dark_breadcrumb {
+    background: #58547e;
+    padding-bottom: 70px;
+    padding-top: 120px;
+    .tp_img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+    .breadcrumb_text {
+      color: #fff;
+      padding-bottom: 65px;
+      .nav {
+        li {
+          a {
+            color: #fff;
+            &:before {
+              color: #fff;
+            }
+          }
+          &:last-child {
+            a {
+              color: #d0cced;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.faq_breadcrumb_area {
+  background: #58547e;
+  position: relative;
+  z-index: 1;
+  padding: 117px 0px 80px;
+  .breadcrumb_content {
+    h2 {
+      color: #fff;
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 12px;
+    }
+    h6 {
+      color: $baseColor;
+      font-size: 18px;
+    }
+  }
+}
+.overlay_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.faq_search {
+  max-width: 570px;
+  margin: 52px auto 0px;
+  .form-control {
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 2px solid #fff;
+    padding: 0px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    line-height: 40px;
+    height: auto;
+    padding-bottom: 12px;
+    box-shadow: none;
+    @include placeholder {
+      color: #fff;
+    }
+  }
+}
+.control-with-icon {
+  position: relative;
+  .control-icon {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #fff;
+    font-size: 24px;
+    top: 46%;
+    transform: translateY(-50%);
+  }
+}
+/* End Breadcrumb Area css
+============================================================================================ */
+
+/* Doctors Bio Area css
+============================================================================================ */
+.doctors_bio {
+  .col-lg-6 {
+    align-self: center;
+  }
+  .doctors_img {
+    padding-right: 30px;
+  }
+  .doctors_bio_text {
+    h5 {
+      font: 400 16px $sand;
+      color: #9a96bb;
+      font-style: italic;
+    }
+    h3 {
+      font: 700 36px $sand;
+      margin-bottom: 20px;
+    }
+    p {
+      font: 400 18px/36px $sand;
+      max-width: 480px;
+      margin-bottom: 20px;
+    }
+  }
+}
+/* End Doctors Bio Area css
+============================================================================================ */
+
+/* Checker Form Area css
+============================================================================================ */
+.checker_box_inner {
+  text-align: left;
+  .checker_simple_text {
+    h3 {
+      color: #fff;
+      font: 700 30px $sand;
+    }
+    p {
+      color: #c4c0e4;
+      margin-bottom: 0px;
+    }
+    .row {
+      margin-top: 35px;
+      margin-bottom: -50px;
+    }
+    .media {
+      margin-bottom: 50px;
+      .d-flex {
+        padding-right: 14px;
+        i {
+          color: $baseColor;
+          font-size: 42px;
+        }
+      }
+      .media-body {
+        h4 {
+          color: #fff;
+          font: 700 21px $sand;
+          margin-bottom: 0px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          padding-top: 7px;
+        }
+      }
+    }
+  }
+}
+.checker_form {
+  border-radius: 10px;
+  background-color: rgba(88, 84, 126, 0.49);
+  box-shadow: 0px 10px 40px 0px rgba(51, 48, 78, 1);
+  padding-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 54px;
+  padding-right: 30px;
+  .bootstrap-tagsinput {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0px;
+    box-shadow: none;
+    padding-left: 0px;
+    margin-bottom: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .badge {
+      margin-right: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font: 500 16px $sand;
+      background: $baseColor;
+      padding-left: 14px;
+      padding-right: 10px;
+      [data-role="remove"]:after {
+        background-color: transparent;
+        content: "\ec2a";
+        font-family: "Linearicons" !important;
+      }
+    }
+    input {
+      padding-left: 10px;
+      width: 48%;
+      font: 500 14px $sand;
+      padding-top: 10px;
+      color: #c4c0e4;
+      background: transparent;
+      border: 0px;
+      @include placeholder {
+        font: 500 14px $sand;
+        color: #c4c0e4;
+      }
+    }
+  }
+  .radio_btn {
+    margin-bottom: 25px;
+    h5 {
+      color: #fff;
+      font: 500 14px $sand;
+      margin-bottom: 10px;
+    }
+    .select_conversation {
+      display: inline-block;
+      input[type="radio"] {
+        width: 0px;
+        visibility: hidden;
+        &:checked {
+          & + label {
+            color: $baseColor;
+            &:before {
+              transform: scale(1);
+            }
+            &:after {
+              border-color: $baseColor;
+            }
+          }
+        }
+      }
+      label {
+        position: relative;
+        margin-bottom: 0;
+        font-family: $sand;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        padding-left: 25px;
+        top: 0;
+        left: 0;
+        line-height: 20px;
+        cursor: pointer;
+        &:before {
+          content: "";
+          height: 7px;
+          width: 7px;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 4px;
+          background: $baseColor;
+          margin-top: -4px;
+          transform: scale(0);
+          transition: all 0.2s linear;
+        }
+        &:after {
+          content: "";
+          display: table-caption;
+          width: 15px;
+          height: 15px;
+          left: 0;
+          top: 2px;
+          border: 1px solid #fff;
+          position: absolute;
+          border-radius: 50%;
+          transition: 240ms;
+        }
+      }
+      & + .select_conversation {
+        margin-left: 28px;
+      }
+    }
+  }
+  .checker_select {
+    border-radius: 0px;
+    background: transparent;
+    padding-left: 0px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    span {
+      color: #fff;
+      font: 600 16px $sand;
+    }
+    &:after {
+      content: "\ec3a";
+      font-family: "Linearicons" !important;
+      border: none;
+      color: #fff;
+      transform: rotate(0deg);
+      margin-top: -18px;
+      right: 24px;
+    }
+  }
+  .button {
+    margin-top: 40px;
+    text-align: right;
+    .submit_btn {
+      margin-top: 40px;
+    }
+  }
+}
+/* End Checker Form Area css
+============================================================================================ */

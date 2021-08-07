@@ -1,0 +1,41 @@
+/*font Variables*/
+$sand: "Quicksand", sans-serif;
+$robot: "Roboto Slab", serif;
+$noto: "Noto Sans TC", sans-serif;
+
+/*Color Variables*/
+$baseColor: #01cfbe;
+$dip: #242424;
+$blue: #9491b0;
+$pfont: #58547e;
+$dark: #1a1a1a;
+
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700|Roboto+Slab:300,400,500,700|Noto+Sans+TC:300,400,500,700&display=swap");
+
+// Mixins
+@mixin transition(
+  $property: all,
+  $duration: 300ms,
+  $animate: linear,
+  $delay: 0s
+) {
+  transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}

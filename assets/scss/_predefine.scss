@@ -1,0 +1,143 @@
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+.row.m0 {
+  margin: 0px;
+}
+
+body {
+  line-height: 30px;
+  font-size: 16px;
+  font-family: $sand;
+  font-weight: 400;
+  color: $pfont;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $sand;
+  font-weight: 700;
+}
+i {
+  &:before {
+    margin-left: 0px !important;
+  }
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.m0 {
+  margin: 0px;
+}
+.p0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.p_100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.pad_top {
+  padding-top: 100px;
+}
+.pad_btm {
+  padding-bottom: 100px;
+}
+
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+.body_wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: $baseColor;
+}
+
+::selection {
+  background-color: $baseColor;
+  color: #fff;
+}
+
+-webkit-::selection {
+  background-color: $baseColor;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: $baseColor;
+  color: #fff;
+}
+.loader_running {
+  overflow: hidden;
+}
+/* Main Title Area css
+============================================================================================ */
+.main_title {
+  margin-bottom: 70px;
+  h2 {
+    font: 700 48px $sand;
+    margin-bottom: 0px;
+  }
+  h5 {
+    font: 500 24px $sand;
+    color: $baseColor;
+    margin-bottom: 5px;
+  }
+  p {
+    font: 500 16px/26px $sand;
+    max-width: 580px;
+    margin: 15px auto 0px;
+  }
+  &.white {
+    h2 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+.main_title_2 {
+  margin-bottom: 80px;
+  h2 {
+    font: 700 36px $sand;
+    margin-bottom: 15px;
+    span {
+      color: $baseColor;
+    }
+  }
+  p {
+    max-width: 720px;
+    margin: auto;
+    font: 400 16px/28px $sand;
+  }
+}
+/* End Main Title Area css
+============================================================================================ */

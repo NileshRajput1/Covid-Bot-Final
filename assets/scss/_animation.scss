@@ -1,0 +1,23 @@
+/* Key Frame Animation Area css
+============================================================================================ */
+@keyframes covidmove {
+  0% {
+    transform: translateY(0px) rotate(180deg);
+  }
+  25% {
+    transform: translateY(-50px) translateX(-10px);
+  }
+  50% {
+    transform: translateY(-50px) translateX(-10px) rotate(-45deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* End Key Frame Animation Area css
+============================================================================================ */

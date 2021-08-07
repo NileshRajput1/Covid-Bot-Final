@@ -1,0 +1,143 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: hospital
+  examples: |
+    - I need hospital
+    - need beds in hospital
+    - ventilator required
+    - Can you help me with ventilator
+    - need beds
+
+- intent: oxygen
+  examples: |
+    - I need oxygen
+    - need beds in hospital with oxygen
+    - oxygen required
+    - Can you help me with ventilator with oxygen
+    - need oxygen
+    - oxygen
+
+
+- intent: plasma
+  examples: |
+    - I need plasma
+    - need beds in hospital with plasma
+    - plasma required
+    - Can you help me with ventilator with plasma
+    - need plasma
+    - plasma
+
+
+
+- intent: volunteer
+  examples: |
+    - I want to be volunteer
+    - volunteer
+    - I want to contribute
+    - I want to join the team
+
+
+
+- intent: remdesivir
+  examples: |
+    - I need Remdesivir
+    - Remdesivir required
+    - Can you help me with Remdesivir
+    - need Remdesivir
+    - Remdesivir
+- intent: medicine
+  examples: |
+    - I need medicine
+    - medicine required
+    - Can you help me with medicine
+    - need medicine
+    - medicine
+
+- intent: ambulance
+  examples: |
+    - I need ambulance
+    - ambulance required
+    - Can you help me with ambulance
+    - need ambulance
+    - ambulance
+
+- lookup: city
+  examples: |
+    - gajiyabad
+    - jamtara
+    - रांची
+
+- intent: city
+  examples: |
+    - I live in [Ranchi]{"entity":"city"}
+    - I live in [Mumbai]{"entity":"city"}
+    - [Ranchi]{"entity":"city"}
+    - [Mumbai]{"entity":"city"}
+    - [Delhi]{"entity":"city"}
+    - [Kolkata]{"entity":"city"}
+    - [dhanbad]{"entity":"city"}
+    - [sonipath]{"entity":"city"}
+    - [faridabad]{"entity":"city"}
+    - [naraina]{"entity":"city"}
+    - [noida]{"entity":"city"}
+    - [ghaziabad]{"entity":"city"}
+    - [burari]{"entity":"city"}
+    - [new delhi]{"entity":"city"}
+    - [gurgaon]{"entity":"city"}
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+
+- intent: nlu_fallback
+  examples: |
+    - I want to order food
+    - who is the prime minister of india
+    - what is an atom
+    - what is 2 + 2?

@@ -1,0 +1,69 @@
+version: "2.0"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: city
+    entities:
+    - city: "ranchi"
+  - slot_was_set:
+      - city: "ranchi"
+  - action: utter_option
+
+- story: city
+  steps:
+  - intent: city
+  - action: utter_option
+
+- story: oxygen
+  steps:
+  - intent: oxygen
+  - action: Get_Oxygen
+  - action: utter_restart
+
+- story: plasma
+  steps:
+  - intent: plasma
+  - action: Get_Plasma
+  - action: utter_restart
+
+- story: remdesivir
+  steps:
+  - intent: remdesivir
+  - action: Get_REMDESIVIR
+  - action: utter_restart
+
+
+- story: volunteer
+  steps:
+  - intent: volunteer
+  - action: utter_volenteer
+  - action: utter_restart
+
+- story: hospital
+  steps:
+  - intent: hospital
+  - action: Get_Hospital
+  - action: utter_restart
+
+
+- story: ambulance
+  steps:
+  - intent: ambulance
+  - action: Get_Ambulance
+  - action: utter_restart
+
+
+- story: out of scope
+  steps:
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+  - action: utter_restart
